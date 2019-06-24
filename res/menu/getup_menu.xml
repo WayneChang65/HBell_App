@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="健康資訊" 
+		android:id="@+id/mit_getup_info"
+		android:icon="@drawable/getup_menu_info">
+	</item>
+</menu>

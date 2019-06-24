@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.gmail.wayne65.hbell"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    	<receiver android:process=":remote" android:name=".getup_alarmReceiver" />
+    	<receiver android:process=":remote" android:name=".sleep_alarmReceiver" />
+        <receiver android:process=":remote" android:name=".meal_alarmReceiver_breakfast" />
+        <receiver android:process=":remote" android:name=".meal_alarmReceiver_lunch" />
+        <receiver android:process=":remote" android:name=".meal_alarmReceiver_dinner" />
+        <receiver android:process=":remote" android:name=".drink_alarmReceiver" />
+        <receiver android:process=":remote" android:name=".medic_alarmReceiver_time1" />
+        <receiver android:process=":remote" android:name=".medic_alarmReceiver_time2" />
+        <receiver android:process=":remote" android:name=".medic_alarmReceiver_time3" />
+        <receiver android:process=":remote" android:name=".sport_alarmReceiver_time1" />
+        <receiver android:process=":remote" android:name=".sport_alarmReceiver_time2" />
+        <receiver android:process=":remote" android:name=".sport_alarmReceiver_time3" />
+        <activity android:name=".main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="getup"></activity>
+        <activity android:name="getup_alertDlg"></activity>
+        <activity android:name="getup_info"></activity>
+        <activity android:name="sleep"></activity>
+        <activity android:name="sleep_alertDlg"></activity>
+        <activity android:name="sleep_info"></activity>        
+        <activity android:name="meal"></activity>
+        <activity android:name="meal_alertDlg_breakfast"></activity>
+        <activity android:name="meal_alertDlg_lunch"></activity>
+        <activity android:name="meal_alertDlg_dinner"></activity>
+        <activity android:name="meal_info"></activity> 
+        <activity android:name="drink"></activity>
+        <activity android:name="drink_alertDlg"></activity>
+        <activity android:name="drink_info"></activity> 
+        <activity android:name="medic"></activity>
+        <activity android:name="medic_alertDlg_time1"></activity>
+        <activity android:name="medic_alertDlg_time2"></activity>
+        <activity android:name="medic_alertDlg_time3"></activity>
+        <activity android:name="medic_info"></activity> 
+        <activity android:name="sport"></activity>
+        <activity android:name="sport_alertDlg_time1"></activity>
+        <activity android:name="sport_alertDlg_time2"></activity>
+        <activity android:name="sport_alertDlg_time3"></activity>
+        <activity android:name="sport_info"></activity> 
+        <activity android:name="sportsetup"></activity>
+        <activity android:name="main_settingDlg"></activity>
+        <activity android:name="medic_setting_dlg"></activity>
+        <activity android:name="sport_setting_dlg"></activity>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 

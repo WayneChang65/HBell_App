@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="設定" 
+		android:id="@+id/mit_main_setting"
+		android:icon="@drawable/main_menu_setting">
+	</item>
+	<item android:title="關於"
+		android:id="@+id/mit_main_about"
+		android:enabled="false"
+		android:icon="@drawable/main_menu_about">		
+	</item>
+</menu>
